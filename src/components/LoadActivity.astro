@@ -1,0 +1,48 @@
+---
+const { isLoadActivity } = Astro.props
+---
+
+{
+  isLoadActivity && (
+    <section>
+      <form id="load-activity-form">
+        <div class="input-box">
+          <label for="student-name">Nombre del Estudiante</label>
+          <input type="text" name="student-name" id="student-name" />
+        </div>
+        <div class="input-box">
+          <label for="activity-name">Nombre Que le das a tu trabajo</label>
+          <input type="text" name="activity-name" id="activity-name" />
+        </div>
+          <input type="file" name="activity-file" id="activity-file" />
+          <button>Sube tu actividad</button>
+      </form>
+      <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          margin-top: 3rem;
+          background-color: rgb(70, 42, 88);
+          padding-inline: 1rem;
+          padding-block: 2rem;
+        }
+
+        div {
+          
+        }
+
+        label {
+          display: inline-block;
+          margin-bottom: .5rem;
+        }
+
+        .button {
+          background-color: rgba(255, 255, 255, 0.733);
+          border: 1px solid rgb(70, 42, 88);
+        }
+
+      </style>
+    </section>
+  )
+}

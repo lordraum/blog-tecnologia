@@ -11,7 +11,9 @@ A continuación, encontrarán las instrucciones detalladas para llevar a cabo ca
 
 Accede a la aplicación en línea mentimeter para ingresar al tutorial
 
-[Tutorial en Mentimeter](https://www.menti.com)
+<strong>
+<a href='https://www.menti.com' target='blank'>Tutorial en Mentimeter</a>
+</strong>
 
 Responde las preguntas sobre tus conceptos previos relacionados con algoritmos y diagramas de flujo.
 Sé honesto y responde de la mejor manera posible según tu comprensión actual de estos conceptos.
@@ -20,7 +22,9 @@ Sé honesto y responde de la mejor manera posible según tu comprensión actual 
 
 Presta atención al video que el docente comparte a continuación
 
-[Pendiente link al video](www.video.com)
+<strong>
+  <a href='https://www.youtube.com/watch?v=veXgaxaNICM' target='blank'>Video tutorial en youtube</a>
+</strong>
 
 Observa los ejemplos de algoritmos presentados en el video.
 Después del video, escucha atentamente la explicación del docente sobre los conceptos básicos de algoritmos y diagramas de flujo.
@@ -52,4 +56,4 @@ Escucha atentamente las presentaciones de los demás grupos y participa en la di
   - Explicación clara y precisa del algoritmo diseñado.
   - Habilidad para comunicar cómo resolver la situación propuesta 
 
-Recuerda que se valorará tanto tu comprensión de los conceptos como tu capacidad para aplicarlos en la creación y presentación del algoritmo. ¡Esperamos que disfrutes de la actividad y demuestres tu habilidad en el pensamiento computacional!
+Recuerda que se valorará tanto tu comprensión de los conceptos como tu capacidad para aplicarlos en la creación y presentación del algoritmo. **¡Esperamos que disfrutes de la actividad y demuestres tu habilidad en el pensamiento computacional!**

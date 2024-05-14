@@ -1,21 +1,64 @@
 ---
 layout: ../../../layouts/ActivityLayout.astro
 title: 'Actividad 02'
+isLoadActivity: true
 ---
 
-# Algoritmos parte 2
 
-Los algoritmos son conjuntos ordenados de instrucciones precisas diseñadas para resolver un problema específico. Son como recetas paso a paso que guían a una computadora sobre qué hacer y en qué orden hacerlo para alcanzar un resultado deseado. Estas instrucciones pueden incluir operaciones matemáticas, comparaciones lógicas, o cualquier otra tarea que se pueda realizar mediante un proceso definido.
+# ACTIVIDAD 2
 
-En la práctica, los algoritmos son fundamentales en la informática y en muchas otras áreas, desde la planificación logística hasta la inteligencia artificial. Permiten automatizar tareas repetitivas, optimizar procesos y resolver problemas complejos de manera eficiente. Además, la eficacia de un algoritmo se evalúa según su precisión, su rapidez y su capacidad para manejar diferentes situaciones o conjuntos de datos. En resumen, los algoritmos son el corazón de la computación moderna, impulsando la innovación y la resolución de problemas en una amplia gama de campos.
+*Queridos estudiantes,*
+
+¡Espero que estén listos para sumergirse en el mundo de los diagramas de flujo! Aquí están las instrucciones detalladas para nuestra próxima actividad:
+
+## Parte 1: Explicación del Docente (20 minutos)
+
+- Nuestro profesor nos guiará a través de una explicación sobre los diagramas de flujo, su estructura y representación. Veremos ejemplos prácticos de diferentes tipos de diagramas de flujo.
+- Accede a la presentación y a los materiales proporcionados por el profesor.
+- Revisa los videos y ejemplos para tener una comprensión sólida del tema.
+- Aquí va una presentación y links de unas paginas 
+
+## Parte 2: Trabajo en Parejas (30 minutos)
+
+- Después de la explicación, trabajarán en parejas para representar en un diagrama de flujo algún algoritmo que hayamos visto en la clase anterior. Tendrán 30 minutos para completar esta tarea.
+- Realizaran un bosquejo de su diseño en el cuaderno, el profesor realizará comentarios y correcciones para continuar con la actividad.
+
+**Asegúrense de entender completamente el funcionamiento del algoritmo antes de comenzar.**
+
+## Parte 3: Uso de Draw IO (30 minutos)
+
+- Usaremos la plataforma en línea Draw IO para crear nuestros diagramas de flujo de manera colaborativa. 
+- Accede al enlace proporcionado por el profesor para utilizar `Draw IO`
+- Colaboren en la creación del diagrama de flujo con tu compañero.
+- Utilicen las formas correctas y asegúrense de que la estructura del diagrama sea clara.
 
 
-![alt text](image.png)
+<strong>
+  <a href='https://www.drawio.com' target='_blank'>Link a Draw IO</a>
+</strong>
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/dQw4w9WgXcQ)](https://youtu.be/dQw4w9WgXcQ)
 
-## Link a ...
+## Parte 4: Publicación en el Blog de Clase (20 minutos)
 
-[OpenAI](https://openai.com){:target='blank'}
+Al finalizar, compartiremos nuestros diagramas en el blog de la clase. Aquí es donde exploraremos el trabajo de nuestros compañeros y haremos comentarios constructivos sobre sus diagramas.
 
-<a href='https://google.com' target='blank'>Google</a>
+## Instrucciones Detalladas:
+
+## Acceso al Material de Clase:
+
+
+- Accede al enlace proporcionado por el profesor para utilizar Draw IO.
+- Colaboren en la creación del diagrama de flujo con tu compañero.
+- Utilicen las formas correctas y asegúrense de que la estructura del diagrama sea clara.
+- Publicación en el Blog de Clase:
+
+**¡Recuerden que la colaboración y la retroalimentación son clave para aprender y crecer juntos! ¡Buena suerte y diviértanse!**
+
+## ¿Qué evaluaremos?
+
+- Claridad y Precisión del Diagrama de Flujo
+- Correcta Aplicación de Conceptos de Diagramas de Flujo
+- Participación Activa en la Retroalimentación
+- Colaboración en el Trabajo en Parejas
+
+Recuerden que el objetivo principal de esta actividad es comprender y aplicar los conceptos de diagramas de flujo, así como fomentar la colaboración y la retroalimentación entre compañeros. **¡Éxito en su trabajo!**
