@@ -5,7 +5,7 @@ const { pathname } = Astro.url
 const menuItems = [
   {
     name: 'Inicio',
-    path: '',
+    path: ' ', // Corregir
   },
   {
     name: 'Usos TIC',
@@ -29,7 +29,7 @@ const menuItems = [
         <li
           class:list={[
             'tab',
-            { 'current-tab': item.path === pathname.replace(pathBase, '') },
+            { 'current-tab': pathname.includes(item.path) || pathname === '' },
           ]}
         >
           <a href={`${pathBase}${item.path}`}>{item.name}</a>
