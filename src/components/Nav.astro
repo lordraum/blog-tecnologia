@@ -1,11 +1,13 @@
 ---
 const pathBase = '/blog-actividades/'
 const { pathname } = Astro.url
+const site = Astro.site
+console.log(site, pathname)
 
 const menuItems = [
   {
     name: 'Inicio',
-    path: ' ', // Corregir
+    path: '', // Corregir
   },
   {
     name: 'Usos TIC',
@@ -27,10 +29,7 @@ const menuItems = [
     {
       menuItems.map((item) => (
         <li
-          class:list={[
-            'tab',
-            { 'current-tab': pathname.includes(item.path) || pathname === '' },
-          ]}
+          class:list={['tab', { 'current-tab': `/${pathname}` === item.path }]}
         >
           <a href={`${pathBase}${item.path}`}>{item.name}</a>
         </li>
