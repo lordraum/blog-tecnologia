@@ -43,7 +43,16 @@ const { title } = Astro.props
         margin-inline: auto;
       }
 
+      main h2,
+      main h3,
+      main img {
+        margin-top: 3rem;
+      }
+
       p {
+        margin-top: 2rem;
+        padding: 1rem;
+        border: 1px dotted rgba(140, 82, 207, 0.75);
         line-height: 1.5rem;
         text-wrap: pretty;
       }
@@ -59,9 +68,8 @@ const { title } = Astro.props
         height: max-content;
       }
 
-      ul {
-        padding: 0;
-        margin: 0;
+      li {
+        margin-bottom: 1rem;
       }
 
       a {
