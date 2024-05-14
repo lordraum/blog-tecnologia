@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ActivityLayout.astro
-title: 'Algoritmos parte 2'
+title: 'Actividad 02'
 ---
 
 # Algoritmos parte 2
