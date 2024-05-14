@@ -1,0 +1,39 @@
+---
+import image from '../img/banner-home.webp'
+---
+
+<article>
+  <div class="img-box">
+    <img src={image.src} />
+  </div>
+  <div class="text-box">
+    <h1>Pensar como un Programador: Un Blog de Pensamiento Computacional.</h1>
+  </div>
+</article>
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .text-box {
+    background-color: var(--second-bg-clr);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .img-box {
+    font-size: 0;
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
+
+  .text-box {
+    padding: 5%;
+  }
+</style>

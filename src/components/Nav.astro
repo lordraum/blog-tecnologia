@@ -1,0 +1,57 @@
+<nav>
+  <ul id="menu">
+    <li class="tab" data-item="1"><a href="/">Inicio</a></li>
+    <li class="tab" data-item="2"><a href="/tic-uses">Usos TIC</a></li>
+    <li class="tab" data-item="3"><a href="/activities/01">Actividad 1</a></li>
+    <li class="tab" data-item="4"><a href="/activities/02">Actividad 2</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--second-bg-clr);
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .tab {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .current-tab {
+    background-color: var(--main-bg-clr);
+  }
+
+  a {
+    pointer-events: visible;
+  }
+</style>
+<script>
+  const $menu = document.getElementById('menu')
+  const $menuItems = Array.from($menu.children) as HTMLElement[]
+  const currentItem = localStorage.getItem('currentMenuItem') ?? '1'
+  const $currentMenuItem = $menuItems.find(
+    (item) => item.dataset.item === currentItem
+  )
+
+  $currentMenuItem.classList.add('current-tab')
+
+  $menu.addEventListener('click', (e) => {
+    const $target = e.target as HTMLElement
+    const $elm = $target.parentElement
+    $menuItems.forEach((item) => item.classList.remove('current-tab'))
+    localStorage.setItem('currentMenuItem', $elm.dataset.item.toString())
+  })
+</script>

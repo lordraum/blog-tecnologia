@@ -1,0 +1,15 @@
+---
+import Root from './Root.astro'
+const { frontmatter } = Astro.props
+---
+
+<Root title={frontmatter.title}>
+  <slot>
+    <slot />
+  </slot>
+</Root>
+<style is:global>
+  img {
+    aspect-ratio: inherit;
+  }
+</style>
