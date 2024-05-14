@@ -1,13 +1,12 @@
 ---
 const pathBase = '/blog-actividades/'
 const { pathname } = Astro.url
-const site = Astro.site
-console.log(site, pathname)
+const siteBase = `https://lordraum.github.io${pathBase}`
 
 const menuItems = [
   {
     name: 'Inicio',
-    path: '', // Corregir
+    path: '',
   },
   {
     name: 'Usos TIC',
@@ -29,7 +28,15 @@ const menuItems = [
     {
       menuItems.map((item) => (
         <li
-          class:list={['tab', { 'current-tab': `/${pathname}` === item.path }]}
+          class:list={[
+            'tab',
+            {
+              'current-tab':
+                import.meta.env.MODE === 'development'
+                  ? item.path === pathname.replace(pathBase, '')
+                  : item.path === pathname.replace(siteBase, ''),
+            },
+          ]}
         >
           <a href={`${pathBase}${item.path}`}>{item.name}</a>
         </li>
