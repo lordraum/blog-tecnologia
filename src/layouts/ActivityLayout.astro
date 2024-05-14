@@ -4,12 +4,47 @@ const { frontmatter } = Astro.props
 ---
 
 <Root title={frontmatter.title}>
-  <slot>
+  <section class="content" slot="main-content">
     <slot />
-  </slot>
+  </section>
+  <style is:global>
+    .content img {
+      aspect-ratio: inherit;
+    }
+
+    .content h1,
+    .content h2,
+    .content img {
+      margin-top: 3rem;
+    }
+
+    .content p {
+      margin-top: 2rem;
+      border: 1px dotted rgba(140, 82, 207, 0.75);
+      padding: 1rem;
+    }
+
+    .content p:has(a) {
+      border: none;
+      padding: 0;
+    }
+
+    .content a {
+      border: 1px solid;
+      padding: 1rem;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: rgba(140, 82, 207, 0.75);
+    }
+
+    .content ul {
+      padding-left: 2rem;
+    }
+
+    .content li {
+      line-height: 2rem;
+    }
+  </style>
 </Root>
-<style is:global>
-  img {
-    aspect-ratio: inherit;
-  }
-</style>

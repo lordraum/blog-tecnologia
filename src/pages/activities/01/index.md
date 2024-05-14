@@ -3,19 +3,53 @@ layout: ../../../layouts/ActivityLayout.astro
 title: 'Actividad 01'
 ---
 
-# Algoritmos parte 1
+# ¡Bienvenidos a la actividad sobre algoritmos y diagramas de flujo!
 
-Los algoritmos son conjuntos ordenados de instrucciones precisas diseñadas para resolver un problema específico. Son como recetas paso a paso que guían a una computadora sobre qué hacer y en qué orden hacerlo para alcanzar un resultado deseado. Estas instrucciones pueden incluir operaciones matemáticas, comparaciones lógicas, o cualquier otra tarea que se pueda realizar mediante un proceso definido.
+A continuación, encontrarán las instrucciones detalladas para llevar a cabo cada parte de la actividad:
 
-En la práctica, los algoritmos son fundamentales en la informática y en muchas otras áreas, desde la planificación logística hasta la inteligencia artificial. Permiten automatizar tareas repetitivas, optimizar procesos y resolver problemas complejos de manera eficiente. Además, la eficacia de un algoritmo se evalúa según su precisión, su rapidez y su capacidad para manejar diferentes situaciones o conjuntos de datos. En resumen, los algoritmos son el corazón de la computación moderna, impulsando la innovación y la resolución de problemas en una amplia gama de campos.
+## Parte 1: Identificación de conceptos previos (10 minutos)
+
+Accede a la aplicación en línea mentimeter para ingresar al tutorial
+
+[Tutorial en Mentimeter](https://www.menti.com)
+
+Responde las preguntas sobre tus conceptos previos relacionados con algoritmos y diagramas de flujo.
+Sé honesto y responde de la mejor manera posible según tu comprensión actual de estos conceptos.
+
+## Parte 2: Visualización del video y análisis de ejemplos (30 minutos)
+
+Presta atención al video que el docente comparte a continuación
+
+[Pendiente link al video](www.video.com)
+
+Observa los ejemplos de algoritmos presentados en el video.
+Después del video, escucha atentamente la explicación del docente sobre los conceptos básicos de algoritmos y diagramas de flujo.
+Toma notas si es necesario para recordar los puntos importantes.
+
+## Parte 3: Trabajo en grupos para crear un algoritmo (30 minutos)
+
+Organízate en grupos según las indicaciones del docente.
+Discute y elige una situación cotidiana para la cual crearán un algoritmo.
+Trabajen juntos para diseñar un algoritmo claro y definido para resolver la situación elegida.
+
+## Parte 4: Presentación de los algoritmos (20 minutos)
+
+Cuando finalice el tiempo de trabajo en grupo, prepárate para presentar tu algoritmo al resto de la clase.
+Explica cómo resolverían la situación propuesta utilizando su algoritmo.
+Sé claro y conciso en tu presentación.
+Escucha atentamente las presentaciones de los demás grupos y participa en la discusión si es necesario.
+¡Recuerda que el objetivo de esta actividad es aprender y disfrutar del proceso! ¡Diviértete y aprovecha al máximo esta experiencia de aprendizaje!
 
 
-![alt text](image.png)
+## Durante esta actividad, se evaluará tu desempeño en los siguientes aspectos:
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/dQw4w9WgXcQ)](https://youtu.be/dQw4w9WgXcQ)
+  - Participación en Mentimeter 
+  - Comprensión de los conceptos previos sobre algoritmos y diagramas de flujo.
+  - Capacidad para entender los ejemplos de algoritmos presentados en el video.
+  - Asimilación de los conceptos básicos de pensamiento computacional y algoritmo.
+  - Claridad y coherencia en la creación del algoritmo para la situación cotidiana elegida.
+  - Correcta aplicación de los principios de diseño de algoritmos.
+  - Explicación clara y precisa del algoritmo diseñado.
+  - Habilidad para comunicar cómo resolver la situación propuesta 
 
-## Link a ...
-
-[OpenAI](https://openai.com){:target='blank'}
-
-<a href='https://google.com' target='blank'>Google</a>
+Recuerda que se valorará tanto tu comprensión de los conceptos como tu capacidad para aplicarlos en la creación y presentación del algoritmo. ¡Esperamos que disfrutes de la actividad y demuestres tu habilidad en el pensamiento computacional!

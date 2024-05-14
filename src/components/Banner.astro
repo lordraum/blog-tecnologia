@@ -4,7 +4,7 @@ import image from '../img/banner-home.webp'
 
 <article>
   <div class="img-box">
-    <img src={image.src} />
+    <img class="banner-image" src={image.src} />
   </div>
   <div class="text-box">
     <h1>Pensar como un Programador: Un Blog de Pensamiento Computacional.</h1>
@@ -16,6 +16,7 @@ import image from '../img/banner-home.webp'
     flex-direction: column;
     margin-top: 1.5rem;
   }
+
   .text-box {
     background-color: var(--second-bg-clr);
   }
@@ -34,6 +35,21 @@ import image from '../img/banner-home.webp'
   }
 
   .text-box {
-    padding: 5%;
+    padding-inline: 5%;
+    padding-block: 10%;
+  }
+
+  @media (width > 639px) {
+    article {
+      flex-direction: row;
+    }
+
+    .text-box {
+      padding-top: 0;
+    }
+
+    h1 {
+      margin-top: 5rem;
+    }
   }
 </style>
