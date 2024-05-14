@@ -1,7 +1,6 @@
 ---
 const pathBase = '/blog-actividades/'
 const { pathname } = Astro.url
-const siteBase = `https://lordraum.github.io${pathBase}`
 
 const menuItems = [
   {
@@ -24,17 +23,14 @@ const menuItems = [
 ---
 
 <nav>
-  <ul id="menu">
+  <ul id="menu" data-pathname={pathname}>
     {
       menuItems.map((item) => (
         <li
           class:list={[
             'tab',
             {
-              'current-tab':
-                import.meta.env.MODE === 'development'
-                  ? item.path === pathname.replace(pathBase, '')
-                  : item.path === pathname.replace(siteBase, ''),
+              'current-tab': item.path === pathname.replace(pathBase, ''),
             },
           ]}
         >
@@ -72,6 +68,11 @@ const menuItems = [
     background-color: var(--main-bg-clr);
   }
 </style>
+
+<script>
+  const $menu = document.getElementById('menu')
+  console.log(menu.dataset.pathname)
+</script>
 
 <!-- <script>
   const $menu = document.getElementById('menu')
