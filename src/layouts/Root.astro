@@ -2,7 +2,6 @@
 import 'normalize.css'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
-import { ViewTransitions } from 'astro:transitions'
 const { title } = Astro.props
 ---
 
@@ -12,60 +11,60 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <ViewTransitions /><body>
-      <Header />
-    </body><main>
-      <slot />
-    </main>
-    <Footer />
-    <style is:global>
-      *,
-      *::after,
-      *::before {
-        box-sizing: border-box;
-      }
-
-      :root {
-        --second-bg-clr: rgb(62, 44, 112);
-        --main-bg-clr: rgb(31, 28, 37);
-      }
-
-      body {
-        background-color: var(--main-bg-clr);
-        color: rgba(255, 255, 255, 0.85);
-        font-family: 'Nunito Variable', sans-serif;
-      }
-
-      main {
-        width: 90%;
-        margin-inline: auto;
-      }
-
-      p {
-        line-height: 1.5rem;
-        text-wrap: pretty;
-      }
-
-      h1,
-      h2,
-      h3 {
-        text-wrap: balance;
-      }
-
-      img {
-        max-width: 100%;
-        height: max-content;
-      }
-
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    </style>
   </head>
+  <body>
+    <Header />
+  </body><main>
+    <slot />
+  </main>
+  <Footer />
+  <style is:global>
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --second-bg-clr: rgb(62, 44, 112);
+      --main-bg-clr: rgb(31, 28, 37);
+    }
+
+    body {
+      background-color: var(--main-bg-clr);
+      color: rgba(255, 255, 255, 0.85);
+      font-family: 'Nunito Variable', sans-serif;
+    }
+
+    main {
+      width: 90%;
+      margin-inline: auto;
+    }
+
+    p {
+      line-height: 1.5rem;
+      text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-wrap: balance;
+    }
+
+    img {
+      max-width: 100%;
+      height: max-content;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </html>

@@ -1,6 +1,7 @@
 ---
 const pathBase = '/blog-actividades/'
 const { pathname } = Astro.url
+const site = Astro.site
 
 const menuItems = [
   {
@@ -23,17 +24,10 @@ const menuItems = [
 ---
 
 <nav>
-  <ul id="menu" data-pathname={pathname}>
+  <ul id="menu" data-site={site}>
     {
-      menuItems.map((item) => (
-        <li
-          class:list={[
-            'tab',
-            {
-              'current-tab': item.path === pathname.replace(pathBase, ''),
-            },
-          ]}
-        >
+      menuItems.map((item, i) => (
+        <li class="tab" data-item={i + 1}>
           <a href={`${pathBase}${item.path}`}>{item.name}</a>
         </li>
       ))
@@ -64,29 +58,27 @@ const menuItems = [
     text-shadow: 1px 1px 2px #000;
   }
 
-  .current-tab {
+  .current-tab,
+  .current-tab-prod {
     background-color: var(--main-bg-clr);
   }
 </style>
 
 <script>
   const $menu = document.getElementById('menu')
-  console.log(menu.dataset.pathname)
-</script>
-
-<!-- <script>
-  const $menu = document.getElementById('menu')
+  console.log($menu.dataset.site)
   const $menuItems = Array.from($menu.children) as HTMLElement[]
   const currentItem = sessionStorage.getItem('currentMenuItem') ?? '1'
   const $currentMenuItem = $menuItems.find(
     (item) => item.dataset.item === currentItem
   )
+
   $currentMenuItem.classList.add('current-tab')
 
   $menu.addEventListener('click', (e) => {
     const $target = e.target as HTMLElement
     const $elm = $target.parentElement
+    sessionStorage.setItem('currentMenuItem', $elm.dataset.item)
     $menuItems.forEach((item) => item.classList.remove('current-tab'))
-    sessionStorage.setItem('currentMenuItem', $elm.dataset.item.toString())
   })
-</script> -->
+</script>
