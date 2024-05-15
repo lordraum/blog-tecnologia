@@ -19,7 +19,7 @@ isLoadActivity: true
 - Aquí va una presentación y links de unas paginas 
 
 <strong>
-  <a href='https://fzwrpxrxubuvttyvvxtb.supabase.co/storage/v1/object/public/blog-actividades/diagramas-de-flujo-tutorial.pdf' target='_blank'>Lección Diagramas de flujo</a>
+  <a href='' target='_blank'>Lección Diagramas de flujo</a>
 </strong>
 
 <strong>
@@ -40,6 +40,9 @@ isLoadActivity: true
 - Colaboren en la creación del diagrama de flujo con tu compañero.
 - Utilicen las formas correctas y asegúrense de que la estructura del diagrama sea clara.
 
+<strong>
+  <a href='https://app.diagrams.net/' target='_blank'>Link a Draw IO</a>
+</strong>
 
 
 
