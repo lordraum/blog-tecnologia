@@ -18,6 +18,14 @@ isLoadActivity: true
 - Revisa los videos y ejemplos para tener una comprensión sólida del tema.
 - Aquí va una presentación y links de unas paginas 
 
+<strong>
+  <a href='https://fzwrpxrxubuvttyvvxtb.supabase.co/storage/v1/object/public/blog-actividades/diagramas-de-flujo-tutorial.pdf' target='_blank'>Lección Diagramas de flujo</a>
+</strong>
+
+<strong>
+  <a href='https://www.youtube.com/watch?v=Kucgc6NpGwc' target='_blank'>Video diagramas de flujo</a>
+</strong>
+
 ## Parte 2: Trabajo en Parejas (30 minutos)
 
 - Después de la explicación, trabajarán en parejas para representar en un diagrama de flujo algún algoritmo que hayamos visto en la clase anterior. Tendrán 30 minutos para completar esta tarea.
@@ -33,9 +41,6 @@ isLoadActivity: true
 - Utilicen las formas correctas y asegúrense de que la estructura del diagrama sea clara.
 
 
-<strong>
-  <a href='https://www.drawio.com' target='_blank'>Link a Draw IO</a>
-</strong>
 
 
 ## Parte 4: Publicación en el Blog de Clase (20 minutos)
