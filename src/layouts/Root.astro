@@ -50,10 +50,10 @@ const { title } = Astro.props
       }
 
       p {
-        margin-top: 2rem;
-        padding: 1rem;
+        margin-top: 2.5rem;
+        padding: 1.5rem;
         border: 1px dotted rgba(140, 82, 207, 0.75);
-        line-height: 1.5rem;
+        line-height: 1.75rem;
         text-wrap: pretty;
       }
 
@@ -80,6 +80,16 @@ const { title } = Astro.props
       @media (width > 639px) {
         main {
           width: 80%;
+        }
+      }
+
+      @media (width > 900px) {
+        body {
+          font-size: 18px;
+        }
+
+        main {
+          width: 65%;
         }
       }
     </style>

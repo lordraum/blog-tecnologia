@@ -39,6 +39,14 @@ const { frontmatter } = Astro.props
       .content li {
         line-height: 2rem;
       }
+
+      @media (width > 900px) {
+        .content a,
+        button {
+          width: 33%;
+          display: block;
+        }
+      }
     </style>
   </section>
 </Root>

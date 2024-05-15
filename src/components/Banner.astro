@@ -52,4 +52,27 @@ import image from '../img/banner-home.webp'
       margin-top: 5rem;
     }
   }
+
+  @media (width > 639px) {
+    article {
+      height: 400px;
+    }
+
+    .img-box {
+      height: 100%;
+      aspect-ratio: 1 / 1;
+    }
+
+    .text-box {
+      display: grid;
+      place-items: center;
+      padding: 0;
+      padding-bottom: 2rem;
+      padding-inline: 8rem;
+    }
+
+    .text-box h1 {
+      font-size: 2.5rem;
+    }
+  }
 </style>
