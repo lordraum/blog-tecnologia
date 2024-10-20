@@ -15,6 +15,8 @@ Accede a la aplicación en línea mentimeter para ingresar al tutorial
 <a href='https://www.menti.com' target='blank'>Tutorial en Mentimeter</a>
 </strong>
 
+![alt](image.png)
+
 Responde las preguntas sobre tus conceptos previos relacionados con algoritmos y diagramas de flujo.
 Sé honesto y responde de la mejor manera posible según tu comprensión actual de estos conceptos.
 
