@@ -17,6 +17,10 @@ const menuItems = [
     name: 'Actividad 2',
     path: 'activities/02',
   },
+  {
+    name: 'Roboequal',
+    path: 'activities/roboequal',
+  },
 ]
 ---
 
@@ -30,9 +34,16 @@ const menuItems = [
       ))
     }
   </ul>
+  <div class="toggle-menu" role="button">
+    <div class="toggle-menu__bars"></div>
+    <div class="toggle-menu__bars"></div>
+    <div class="toggle-menu__bars"></div>
+  </div>
 </nav>
 <style>
   nav {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,14 +73,95 @@ const menuItems = [
   .current-tab-prod {
     background-color: var(--main-bg-clr);
   }
+
+  @media screen and (width <=850px) {
+    nav {
+      padding-block: 1rem;
+    }
+
+    ul {
+      position: absolute;
+      top: 3rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+      cursor: pointer;
+      transition: all 0.5s;
+      background-color: #352942;
+    }
+
+    .menu-active {
+      display: flex;
+    }
+
+    li {
+      width: 100%;
+      padding-inline: 3rem;
+      text-align: center;
+    }
+
+    .toggle-menu {
+      border: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-inline: auto;
+      width: 1.5rem;
+      height: 1.25rem;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    .toggle-menu__bars {
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      transition: all 0.5s;
+      transform-origin: left;
+      opacity: 0.9;
+    }
+
+    .toggle-active {
+      margin-bottom: 0;
+      transform: translateX(4px);
+    }
+
+    .toggle-active :first-child {
+      rotate: 45deg;
+    }
+
+    .toggle-active :nth-child(2) {
+      opacity: 0;
+    }
+
+    .toggle-active :last-child {
+      rotate: -45deg;
+    }
+  }
 </style>
 
 <script>
   const $menu = document.getElementById('menu')
   const $menuItems = Array.from($menu.children) as HTMLElement[]
+  const $toggle = document.querySelector('.toggle-menu')
   const URL = document.URL
+
+  // Active path
+
   const $activeItem = $menuItems.findLast((item) =>
     URL.includes(item.dataset.path)
   )
+
   $activeItem.classList.add('current-tab')
+
+  // mobile menu toggle
+
+  const handleToggle = () => {
+    $menu.classList.toggle('menu-active')
+    $toggle.classList.toggle('toggle-active')
+  }
+
+  $toggle.addEventListener('click', handleToggle)
 </script>
